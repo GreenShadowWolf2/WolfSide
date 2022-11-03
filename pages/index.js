@@ -7,7 +7,7 @@ export default function Home() {
         <main>
             <section className={styles.home} id="home">
                 <article className={styles.article}>
-                    <img alt={'Tontracker fürs Wolfpack Tracken'} src={'d3efc8.jpg'} className={styles.articleImg}></img>
+                    <Image alt={'Tontracker fürs Wolfpack Tracken'} src={'d3efc8.jpg'} className={styles.articleImg}></Image>
                     <h2>Akustisches Wolfs-Monitoring</h2>
                     <p>Wo sich Wolfsrudel genau aufhalten, ist nicht immer einfach zu bestimmen. Studierende von der EPFL Lausanne haben ein digitales Akustik-Gerät entwickelt, mit dem Wolfsgeheul auf 500 Meter genau geortet werden kann</p>
                 </article>

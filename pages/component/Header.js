@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Router, useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 
@@ -20,10 +21,10 @@ export default function Header() {
             </div>
 
             <nav className={!oben ? `${styles.nav} ${styles.obenNav}` : `${styles.nav}`}>
-                <a href='/#article'>Activitys</a>
-                <a href='/history'>History from Wolfes</a>
-                <a href='/galerie'>Galarie</a>
-                <a href='/enterOrganisation'>Join Organisation</a>
+                <Link href='/#article'>Activitys</Link>
+                <Link href='/history'>History from Wolfes</Link>
+                <Link href='/galerie'>Galarie</Link>
+                <Link href='/enterOrganisation'>Join Organisation</Link>
             </nav>
         </header>
     )

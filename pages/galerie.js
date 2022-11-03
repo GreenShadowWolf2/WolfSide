@@ -57,7 +57,7 @@ export default function Galerie() {
                         {bilder.map(element => {
                             return (
                                 <div className={styles.object}>
-                                    <img alt={element.alt} src={element.bild} className={styles.img}></img>
+                                    <Image alt={element.alt} src={element.bild} className={styles.img}></Image>
                                     <p>{element.text}</p>
                                 </div>
                             )
