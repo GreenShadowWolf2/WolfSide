@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from './galerie.module.css'
+import Image from 'next/image'
 
 export default function Galerie() {
     const bilder = [
@@ -54,9 +55,9 @@ export default function Galerie() {
                 <button className={styles.buttonLeft} onClick={() => incremend(-1)}>{"<"}</button>
                 <section className={`${styles.slideshow}`}>
                     <section className={`${styles.slides} ${slide[index]} `} >
-                        {bilder.map(element => {
+                        {bilder.map((element, index) => {
                             return (
-                                <div className={styles.object}>
+                                <div key={index} className={styles.object}>
                                     <Image alt={element.alt} src={element.bild} className={styles.img}></Image>
                                     <p>{element.text}</p>
                                 </div>
@@ -68,7 +69,7 @@ export default function Galerie() {
                 <section className={styles.buttons}>
                     {bilder.map((val, i) => {
                         return (
-                            <button onClick={() => setIndex(i)} className={`${styles.button} ${index === i && styles.choosen}`}>{i + 1}</button>
+                            <button key={i} onClick={() => setIndex(i)} className={`${styles.button} ${index === i && styles.choosen}`}>{i + 1}</button>
                         )
                     })}
                 </section>

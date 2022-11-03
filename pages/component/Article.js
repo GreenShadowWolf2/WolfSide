@@ -1,4 +1,5 @@
 import styles from './Article.module.css'
+import Image from 'next/image'
 
 export default function Article(props) {
     return (

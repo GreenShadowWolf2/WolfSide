@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { Router, useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 import styles from './Header.module.css'
 export default function Header() {

@@ -1,6 +1,7 @@
 import Article from './component/Article'
 import Digit from './component/digit'
 import styles from './home.module.css'
+import Image from 'next/image'
 
 export default function Home() {
     return (
