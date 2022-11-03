@@ -15,13 +15,14 @@ export default function EnterOrganisation() {
             method: 'post',
             body: JSON.stringify(formData)
         })
-        
+        e.currentTarget.reset()
+        alert("Succesfully registerd")
     }
 
     return (
         <main className={styles.main}>
             <article>
-                <h2>Beitrits Formular</h2>
+                <h2>Beitrittsformular</h2>
                 <form className={styles.form} onSubmit={(e) => sendMail(e)}>
                     <div className={styles.flexColum}>
                         <div className={styles.flex}>
