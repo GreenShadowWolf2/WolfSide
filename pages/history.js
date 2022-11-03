@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useState } from 'react'
 import styles from './history.module.css'
 
@@ -25,14 +26,15 @@ export default function History() {
                 <h3 className={styles.navTitle}>Navigation</h3>
                 <nav className={styles.nav}>
                     {titles.map(element => {
-                        return (<a key={element} href={`#${element}`}>{element}</a>)
+                        return (<Link key={element} href={`#${element}`}>{element}</Link>)
                     })}
                 </nav>
             </article>
             <article className={styles.histories}>
+                <h2>History</h2>
                 {titles.map((val, index) => {
                     return (<section key={val} className={styles.part} id={val}>
-                        <h2>{val}</h2>
+                        <h3>{val}</h3>
                         <p>{texts[index]}</p>
                     </section>)
                 })
