@@ -1,5 +1,5 @@
 import Article from './component/Article'
-import Digit from './component/digit'
+import Digit from './component/Digit'
 import styles from './home.module.css'
 import Image from 'next/image'
 
