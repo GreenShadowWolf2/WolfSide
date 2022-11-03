@@ -13,16 +13,15 @@ export default function EnterOrganisation() {
                                 <option value="Women">Women</option>
                                 <option value="Man">Man</option>
                                 <option value="Other">Other</option>
-                                <option selected disabled></option>
                             </select>
                         </div>
                         <div className={styles.flex}>
                             <label className={styles.lable} for={"firstname"}>First Name</label>
-                            <input className={styles.inputField} name={"firstname"} type={"name"} required></input>
+                            <input className={styles.inputField} name={"firstname"} id="firstname" type={"text"} required></input>
                         </div>
                         <div className={styles.flex}>
                             <label className={styles.lable} for={"secondname"}>Second Name</label>
-                            <input className={styles.inputField} name={"secondname"} type={"name"} required></input>
+                            <input className={styles.inputField} name={"secondname"} id="secondname" type={"text"} required></input>
                         </div>
                         <div className={styles.flex}>
                             <label className={styles.lable} for={"email"}>E-Mail</label>
@@ -30,11 +29,11 @@ export default function EnterOrganisation() {
                         </div>
                         <div className={styles.flex}>
                             <label className={styles.lable} for={"adress"}>Adresse</label>
-                            <input className={styles.inputField} name={"adress"} type={"adress"} required></input>
+                            <input className={styles.inputField} name={"adress"} id="adress" type={"text"} required></input>
                         </div>
                         <div className={styles.flex}>
                             <label className={styles.lable} for={"tel"}>Telefon</label>
-                            <input className={styles.inputField} name={"tel"} type={"tel"} required></input>
+                            <input className={styles.inputField} name={"tel"} id="tel" type={"tel"} required></input>
                         </div>
                         <input type={"submit"} ></input>
                     </div>

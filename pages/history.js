@@ -25,15 +25,15 @@ export default function History() {
             <article className={oben ? `${styles.navigation} ${styles.oben}` : `${styles.navigation} ${styles.closed}`} onMouseLeave={() => setOben(false)}>
                 <h3 className={styles.navTitle}>Navigation</h3>
                 <nav className={styles.nav}>
-                    {titles.map(element => {
-                        return (<Link key={element} href={`#${element}`}>{element}</Link>)
+                    {titles.map((element, index) => {
+                        return (<Link key={index} href={`#${index}`}>{element}</Link>)
                     })}
                 </nav>
             </article>
             <article className={styles.histories}>
                 <h2>History</h2>
                 {titles.map((val, index) => {
-                    return (<section key={val} className={styles.part} id={val}>
+                    return (<section key={index} className={styles.part} id={index}>
                         <h3>{val}</h3>
                         <p>{texts[index]}</p>
                     </section>)
