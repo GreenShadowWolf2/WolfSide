@@ -9,7 +9,6 @@ function MyApp({ Component, pageProps }) {
             <Head>
                 <title>Wolfs Orginisation</title>
                 <lang>eng</lang>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <Header />
             <Component {...pageProps} />
