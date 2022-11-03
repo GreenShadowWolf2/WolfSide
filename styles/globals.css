@@ -20,6 +20,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: aliceblue;
     background: black;
@@ -28,8 +29,10 @@ a {
 
 Image {
   width: 100%;
+  height: auto;
   min-width: 2rem;
   max-width: 400rem;
+  position: static;
 }
 
 p {
@@ -41,8 +44,8 @@ h2 {
 }
 
 article {
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 2rem;
-    background-color: #C9C9C9;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #C9C9C9;
 }

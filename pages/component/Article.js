@@ -5,7 +5,7 @@ export default function Article(props) {
     return (
         <article className={styles.article}>
             <h2 className={styles.title}>{props.title}</h2>
-            <Image alt={props.alt} src={props.src} className={styles.img}></Image>
+            <div className={styles.img}><Image layout='fill' alt={props.alt} src={props.src}></Image></div>
             <p>{props.text}</p>
         </article>
     )

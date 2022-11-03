@@ -5,10 +5,21 @@
 }
 
 .img {
-    max-width: 25rem;
-    height: auto;
+    position: relative;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    height: 18rem;
 }
 
 .title {
     color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    .img {
+        width: 15rem;
+        height: 12rem;
+    }
 }

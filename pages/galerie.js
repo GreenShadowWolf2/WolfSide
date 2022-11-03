@@ -6,22 +6,22 @@ export default function Galerie() {
     const bilder = [
         {
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-            bild: "Fotokarte-Nr1_8738_red50.jpg",
+            bild: "/Fotokarte-Nr1_8738_red50.jpg",
             alt: "dummy alt"
         },
         {
             text: "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-            bild: "Fotokarte-Nr2_6604_red50.jpg",
+            bild: "/Fotokarte-Nr2_6604_red50.jpg",
             alt: "dummy alt"
         },
         {
             text: "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
-            bild: "Fotokarte-Nr3_2106_red50.jpg",
+            bild: "/Fotokarte-Nr3_2106_red50.jpg",
             alt: "dummy alt"
         },
         {
             text: "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. ",
-            bild: "Fotokarte-Nr5_2169_red50.jpg",
+            bild: "/Fotokarte-Nr5_2169_red50.jpg",
             alt: "dummy alt"
         },
     ]
@@ -58,7 +58,7 @@ export default function Galerie() {
                         {bilder.map((element, index) => {
                             return (
                                 <div key={index} className={styles.object}>
-                                    <Image alt={element.alt} src={element.bild} className={styles.img}></Image>
+                                    <div className={`${styles.img} ${styles.Image}`}><Image layout='fill' alt={element.alt} src={element.bild} ></Image></div>
                                     <p>{element.text}</p>
                                 </div>
                             )
