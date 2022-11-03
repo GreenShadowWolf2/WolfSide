@@ -26,7 +26,7 @@ export default async function handler(req, res) {
     console.log(email);
     const mailData = {
       from: 'wolfsorganisation@gmail.com',
-      cc: `spam.flueckiger.silvan@gmail.com`,
+      bcc: `spam.flueckiger.silvan@gmail.com`,
       to: email,
       subject: `Vielen Dank für die Registrierung ${body.firstname} ${body.secondname}`,
       text: `Guten Tag ${anrede} ${body.secondname}
