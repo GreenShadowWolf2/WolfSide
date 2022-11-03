@@ -9,7 +9,7 @@ export default function EnterOrganisation() {
                     <div className={styles.flexColum}>
                         <div className={styles.flex}>
                             <label className={styles.lable} for={"gender"}>Gender</label>
-                            <select id="gender" name="gender" required className={styles.inputField}>
+                            <select id="gender" name="gender" required className={styles.inputField} size="3" >
                                 <option value="Women">Women</option>
                                 <option value="Man">Man</option>
                                 <option value="Other">Other</option>
