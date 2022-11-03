@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
         <>
             <Head>
                 <title>Wolfs Orginisation</title>
-                <lang>eng</lang>
             </Head>
             <Header />
             <Component {...pageProps} />
