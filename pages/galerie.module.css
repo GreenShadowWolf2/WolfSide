@@ -1,0 +1,84 @@
+.slideshow {
+    overflow: hidden;
+    padding-left: 10vW;
+    transition: 1.5s;
+}
+
+.galerie {
+    position: relative;
+}
+
+.object {
+    min-width: 60vW;
+    padding: 1rem;
+}
+
+.slides {
+    transition: 3s;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide1 {
+    transform: none;
+
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.choosen {
+    background-color: #56654B;
+}
+
+.button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+}
+
+.slide2 {
+    transform: translateX(-60vW);
+
+
+
+}
+
+.slide3 {
+    transform: translateX(-120vW);
+
+}
+
+.slide4 {
+    transform: translateX(-180vW);
+
+}
+
+.buttonRight {
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    width: 2rem;
+    height: 80%;
+    border-radius: 2rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.buttonLeft {
+    z-index: 1;
+    position: absolute;
+    left: 10px;
+    top: 10%;
+    width: 2rem;
+    height: 80%;
+    border-radius: 2rem;
+}

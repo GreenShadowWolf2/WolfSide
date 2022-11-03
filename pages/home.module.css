@@ -1,0 +1,45 @@
+.article {
+    max-width: 50rem;
+    max-height: 100vh;
+}
+
+.digits {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.articleImg {
+    max-width: 50rem;
+}
+
+.articles {
+    scroll-margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+    .digits {
+        flex-direction: row;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .digits {
+        flex-direction: column;
+    }
+}

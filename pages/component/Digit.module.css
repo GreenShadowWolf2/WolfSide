@@ -1,0 +1,27 @@
+.side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.digit {
+    color: #56654B;
+}
+
+.title {
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    .side {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .side {
+        flex-direction: row;
+    }
+}
