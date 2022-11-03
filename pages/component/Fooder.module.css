@@ -3,6 +3,8 @@
     background-color: #A88D52;
     align-items: center;
     padding: 1rem;
+    margin-top: auto;
+    bottom: 0;
 }
 
 .footercontent {

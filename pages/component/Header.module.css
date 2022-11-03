@@ -32,7 +32,7 @@
     padding: 1rem;
     flex-direction: row;
     justify-content: space-evenly;
-    transition: all 1.5s ease-in-out;
+    transition: all 1s ease-in-out;
     background-color: #A88D52;
     display: flex;
 
@@ -78,7 +78,6 @@
 
 .obenNav {
     transform: translateY(-100%);
-    ;
 }
 
 @media screen and (min-width: 1000px) {

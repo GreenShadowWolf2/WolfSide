@@ -53,8 +53,8 @@ export default function Galerie() {
             <article className={styles.galerie}>
                 <h2 className={styles.title}>Galerie</h2>
                 <button className={styles.buttonLeft} onClick={() => incremend(-1)}>{"<"}</button>
-                <section className={`${styles.slideshow}`}>
-                    <section className={`${styles.slides} ${slide[index]} `} >
+                <div className={`${styles.slideshow}`}>
+                    <div className={`${styles.slides} ${slide[index]} `} >
                         {bilder.map((element, index) => {
                             return (
                                 <div key={index} className={styles.object}>
@@ -63,16 +63,16 @@ export default function Galerie() {
                                 </div>
                             )
                         })}
-                    </section>
-                </section>
+                    </div>
+                </div>
                 <button className={styles.buttonRight} onClick={() => incremend(1)}>{">"}</button>
-                <section className={styles.buttons}>
+                <div className={styles.buttons}>
                     {bilder.map((val, i) => {
                         return (
                             <button key={i} onClick={() => setIndex(i)} className={`${styles.button} ${index === i && styles.choosen}`}>{i + 1}</button>
                         )
                     })}
-                </section>
+                </div>
 
             </article>
         </main>

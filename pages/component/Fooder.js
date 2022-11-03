@@ -23,11 +23,11 @@ export default function Footer() {
                     <div className={styles.flexColum}>
                         <div className={styles.flex}>
                             <label for={"email"}>E-Mail</label>
-                            <input className={styles.inputField} name={"email"} type={"email"}></input>
+                            <input className={styles.inputField} name={"email"} type={"email"} id="email"></input>
                         </div>
                         <div className={styles.flex}>
                             <label for={"texta"}>Text</label>
-                            <textarea className={styles.inputField} name={"texta"}></textarea>
+                            <textarea className={styles.inputField} name={"texta"} id="texta"></textarea>
                         </div>
                         <input type={"submit"} ></input>
                     </div>
