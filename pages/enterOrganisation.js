@@ -1,15 +1,33 @@
 import styles from './enterOrganisation.module.css'
+import { useState } from 'react';
+import axios from 'axios'
 
 export default function EnterOrganisation() {
+    const sendMail = async (e) => {
+        e.preventDefault();
+        const formData = {}
+        Array.from(e.currentTarget.elements).forEach(field => {
+            if (!field.name) return
+            formData[field.name] = field.value
+        })
+
+        fetch('/api/mail', {
+            method: 'post',
+            body: JSON.stringify(formData)
+        })
+        
+    }
+
     return (
         <main className={styles.main}>
             <article>
                 <h2>Beitrits Formular</h2>
-                <form className={styles.form} onSubmit={() => alert("Thank you for the Message. We will process it as soon as Possible")}>
+                <form className={styles.form} onSubmit={(e) => sendMail(e)}>
                     <div className={styles.flexColum}>
                         <div className={styles.flex}>
                             <label className={styles.lable} for={"gender"}>Gender</label>
-                            <select id="gender" name="gender" required className={styles.inputField} size="3" >
+                            <select id="gender" name="gender" required className={styles.inputField}>
+                                <option></option>
                                 <option value="Women">Women</option>
                                 <option value="Man">Man</option>
                                 <option value="Other">Other</option>
